@@ -9,14 +9,14 @@
         "../sass/base/_container.scss",
         "../sass/components/_logotype.scss",
         "../sass/layout/_header.scss",
-        "../sass/layout/offer.scss",
-        "../sass/layout/details.scss",
-        "../sass/layout/what-we-do.scss",
-        "../sass/layout/ourteam.scss",
-        "../sass/layout/client-section.scss",
-        "../sass/layout/contact-footer.scss",
-        "../sass/layout/portfolio.scss",
-        "../sass/layout/modal.scss"
+        "../sass/layout/_offer.scss",
+        "../sass/layout/_details.scss",
+        "../sass/layout/_what-we-do.scss",
+        "../sass/layout/_ourteam.scss",
+        "../sass/layout/_client-section.scss",
+        "../sass/layout/_contact-footer.scss",
+        "../sass/layout/_portfolio.scss",
+        "../sass/layout/_modal.scss"
     ],
     "names": [],
     "file": "main.min.css"
