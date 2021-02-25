@@ -43,6 +43,7 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+    transition: var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .contact-footer-link2 {
@@ -54,6 +55,7 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+    transition: var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .connect {
@@ -88,6 +90,7 @@
   &:hover,
   &:focus {
     background-color: var(--accent-color);
+    transition: var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .social-footer-list-icon {

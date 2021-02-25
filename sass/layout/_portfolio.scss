@@ -109,6 +109,7 @@
   transition: all var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
   .list-portfolio-images-items:hover &,
   .list-portfolio-images-items:focus & {
-    transform: translateY(0);
+    transform: translateY(0%);
+    transition: var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
