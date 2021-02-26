@@ -86,6 +86,7 @@
 }
 .contact-item {
   display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -101,6 +102,7 @@
   }
 }
 .social-mail {
+  display: flex;
   width: 16px;
   height: 12px;
   fill: #757575;
@@ -113,6 +115,7 @@
   }
 }
 .social-tel {
+  display: flex;
   width: 10px;
   height: 16px;
   fill: #757575;

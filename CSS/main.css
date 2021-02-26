@@ -46,8 +46,6 @@ ol {
 
 p {
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
@@ -249,6 +247,7 @@ body {
 
 .contact-item {
   display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -265,6 +264,7 @@ body {
 }
 
 .social-mail {
+  display: flex;
   width: 16px;
   height: 12px;
   fill: #757575;
@@ -279,6 +279,7 @@ body {
 }
 
 .social-tel {
+  display: flex;
   width: 10px;
   height: 16px;
   fill: #757575;
@@ -326,6 +327,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--accent-color-secondary);
   background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
   cursor: pointer;
@@ -334,6 +336,7 @@ body {
 
 .order-button:hover, .order-button:focus {
   background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
   cursor: pointer;
@@ -437,7 +440,7 @@ body {
 .what-we-do-description {
   position: absolute;
   left: 0;
-  bottom: -15px;
+  bottom: 0px;
   width: 100%;
   height: 100%;
   background-color: rgba(47, 48, 58, 0.8);
@@ -729,7 +732,7 @@ body {
   width: 100%;
   height: 100%;
   fill: var(--accent-color-secondary);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 10px;
 }
 
