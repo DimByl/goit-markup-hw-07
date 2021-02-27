@@ -8,7 +8,7 @@
   --accent-color-secondary: #ffffff;
   --background-color: #2f303a;
   --background-color-secondary: #f5f4fa;
-  --time-hover: 250ms;
+  --time-hover: 2500ms;
 }
 
 .visually-hidden {
@@ -124,19 +124,19 @@ body {
   background-color: var(--accent-color-secondary);
   border-radius: 50%;
   cursor: pointer;
-  transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover, .social-list-link:focus {
   background-color: var(--accent-color);
-  transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover .social-list-icon,
@@ -150,6 +150,7 @@ body {
   fill: var(--accent-color-secondary);
   background-color: rgba(255, 255, 255, 0.1);
   transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*LAYOUT*/
@@ -183,16 +184,17 @@ body {
   padding-bottom: 25px;
   margin-right: 93px;
   display: block;
-  transition: var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logotype:hover, .logotype:focus {
   color: var(--accent-color);
-  transition: var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-item {
   color: var(--accent-color);
+  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link {
@@ -204,12 +206,12 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
-  transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link:hover, .navigation-link:focus {
   color: var(--accent-color);
-  transition: var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link-current {
@@ -255,12 +257,12 @@ body {
   color: var(--main-color);
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-item:hover, .contact-item:focus {
   color: var(--accent-color);
-  transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-mail {
@@ -326,21 +328,23 @@ body {
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--accent-color-secondary);
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
   cursor: pointer;
   transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-button:hover, .order-button:focus {
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
   cursor: pointer;
-  transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .details-section {
@@ -486,7 +490,8 @@ body {
   background-color: var(--accent-color-secondary);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ourteam-title {
@@ -545,13 +550,17 @@ body {
   border-radius: 4px;
   width: 100%;
   height: 100%;
+  transition: border-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-link:hover, .client-link:focus {
+  border-color: var(--accent-color);
   transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover .client-content,
 .client-link:focus .client-content {
   fill: var(--accent-color);
-  border-color: var(--accent-color);
   transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -587,11 +596,12 @@ body {
   line-height: 1.19;
   color: var(--accent-color-secondary);
   margin-bottom: 20px;
-  transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-logotype:hover, .footer-logotype:focus {
   color: var(--accent-color);
+  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-footer-item:not(:last-child) {
@@ -608,7 +618,7 @@ body {
 
 .contact-footer-link:hover, .contact-footer-link:focus {
   color: var(--accent-color);
-  transition: var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-footer-link2 {
@@ -621,7 +631,7 @@ body {
 
 .contact-footer-link2:hover, .contact-footer-link2:focus {
   color: var(--accent-color);
-  transition: var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .connect {
@@ -656,12 +666,12 @@ body {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-footer-list-link:hover, .social-footer-list-link:focus {
   background-color: var(--accent-color);
-  transition: var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-footer-list-icon {
@@ -679,9 +689,11 @@ body {
 .submit-title {
   margin-bottom: 20px;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--accent-color-secondary);
+  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-submit-form {
@@ -708,6 +720,7 @@ body {
 
 .footer-submit-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
+  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-btn {
@@ -725,6 +738,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--accent-color-secondary);
   cursor: pointer;
+  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -760,11 +774,12 @@ body {
   font-size: 16px;
   line-height: 1.625;
   color: var(--secondary-color);
-  background: var(--background-color-secondary);
+  background-color: var(--background-color-secondary);
   border-radius: 4px;
   border-color: transparent;
   cursor: pointer;
-  transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover, .portfolio-button:focus {
@@ -772,12 +787,14 @@ body {
   font-size: 16px;
   line-height: 1.625;
   color: var(--accent-color-secondary);
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border-color: transparent;
   cursor: pointer;
   transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-content {
@@ -800,6 +817,10 @@ body {
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list-link {
+  transition: box-shadow var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-link:hover, .portfolio-list-link:focus {
@@ -869,7 +890,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
   visibility: visible;
   transition: opacity var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1), visibility var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
@@ -955,13 +976,13 @@ body {
 
 .modal-form-input:focus + .modal-icon {
   fill: var(--accent-color);
-  transition: var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus {
   outline: none;
   border-color: var(--accent-color);
-  transition: var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input-label {
@@ -1009,14 +1030,17 @@ body {
 .modal-form-message:focus {
   outline: none;
   border-color: var(--accent-color);
+  transition: border-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-message:focus::placeholder {
   color: var(--accent-color);
+  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-message::placeholder {
   color: rgba(117, 117, 117, 0.5);
+  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-label-policy {
@@ -1076,6 +1100,9 @@ body {
   background-color: var(--accent-color);
   color: var(--accent-color-secondary);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .agreement-link {
