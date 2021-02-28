@@ -25,8 +25,9 @@
   border-radius: 4px;
   border-color: transparent;
   cursor: pointer;
-  transition: color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1),
+    color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     font-weight: 500;
@@ -39,9 +40,9 @@
     border-radius: 4px;
     border-color: transparent;
     cursor: pointer;
-    transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
-    transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
-    transition: box-shadow var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1),
+      color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .portfolio-content {
@@ -51,12 +52,16 @@
   padding-left: 24px;
   padding-bottom: 20px;
 }
+.list-portfolio-images {
+  display: flex;
+  flex-wrap: wrap;
+}
 .list-portfolio-images-items {
   margin: 7px;
-  display: inline-block;
   border: 1px solid #eeeeee;
   transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
-  &:focus &:hover {
+  &:hover,
+  &:focus {
     border: 1px solid #eeeeee;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -64,12 +69,12 @@
   }
 }
 .portfolio-list-link {
-  transition: box-shadow var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .portfolio-image {
@@ -109,8 +114,8 @@
   color: var(--accent-color-secondary);
   transform: translateY(101%);
   transition: all var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
-  .list-portfolio-images-items:hover &,
-  .list-portfolio-images-items:focus & {
+  .portfolio-list-link:hover &,
+  .portfolio-list-link:focus & {
     transform: translateY(0%);
     transition: var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
   }
